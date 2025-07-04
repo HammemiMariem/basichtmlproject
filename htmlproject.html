@@ -4,22 +4,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Delicious Bites Menu</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
+  <header class="header">
     <h1>Tulips</h1>
     <p>A Symbol of Beauty, History, and Springtime</p>
+   <nav class="navbar">
+      <a href="#intro">Intro</a>
+      <a href="#botanical">Botanical</a>
+      <a href="#video">Field</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <main>
-    <section>
+  <main class="container" >
+    <section id="intro">
       <figure>
         <img src="img.jpg" alt="Tulips bouquet " width="200" />
         <figcaption>Tulips bouquet</figcaption>
       </figure>
     </section>
 
-    <section>
+    <section id="botanical">
       <h2>Botanical Characteristics</h2>
       <ul>
         <li><strong>Scientific Name : </strong> Tulipa</li>
@@ -37,7 +44,7 @@
       </article>
     </section>
 
-    <section>
+    <section id="video">
       <h2>A Tulips field</h2>
       <video width="200" controls>
         <source src="White tulip field.mp4" type="video/mp4" />
@@ -70,9 +77,9 @@
       </table>
     </section>
 
-    <section>
+    <section id="contact">
       <h2>Contact Us</h2>
-      <form action="/submit" method="post">
+      <form action="/submit" method="post" class="contact-form">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required /><br><br>
 
@@ -87,7 +94,7 @@
     </section>
   </main>
 
-  <footer>
+  <footer class="footer">
     <p>Read more about Tulips on <a href="https://fr.wikipedia.org/wiki/Tulipe" target="_blank">Wikipedia</a>.</p>
     <nav>
       <a href="#top">Back to top</a> |
